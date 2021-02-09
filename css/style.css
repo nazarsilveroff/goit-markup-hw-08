@@ -181,6 +181,7 @@ nav .auth-nav a {
 }
 /* WORKS */
 .section-works {
+  padding-bottom: 94px;
 }
 .work {
   display: flex;
