@@ -300,7 +300,6 @@ footer .auth-nav .link {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-top: -15px;
-  
 }
 .project-cards li {
   flex-basis: calc(100% / 3 - 30px);
