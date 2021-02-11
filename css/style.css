@@ -367,7 +367,7 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  fill: var(--primary-text-color);
+  fill: var(--btn-bg-color);
   background: rgba(255, 255, 255, 0.1);
 }
 
