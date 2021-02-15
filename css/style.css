@@ -89,9 +89,6 @@ nav .auth-nav a {
   margin-right: 10px;
   fill: currentcolor;
 }
-.auth-nav li {
-}
-
 .auth-nav .link {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -173,8 +170,6 @@ nav .auth-nav a {
 /* HERO */
 
 .section-hero {
-  /* rgba(47, 48, 58, 0.4); */
-  /* background-color: var(--secondary-bg-color); */
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -185,8 +180,7 @@ nav .auth-nav a {
   background-size: cover;
   padding: 200px 0;
 }
-.container-hero {
-}
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -224,8 +218,7 @@ nav .auth-nav a {
 .section-features {
   padding: 90px 0;
 }
-.features-container {
-}
+
 .features {
   display: flex;
   justify-content: space-between;
