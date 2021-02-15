@@ -17,7 +17,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-a{
+a {
   text-decoration: none;
   display: block;
 }
@@ -73,6 +73,10 @@ nav .auth-nav a {
   font-size: 14px;
   line-height: 1.2;
 }
+.auth-nav .link svg {
+  margin-right: 10px;
+  fill: currentcolor;
+}
 .auth-nav li {
 }
 
@@ -94,10 +98,7 @@ nav .auth-nav a {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
-.auth-nav .link svg {
-  margin-right: 10px;
-  fill: currentcolor;
-}
+
 .button.primary {
   background-color: var(--accent-text-color);
   color: var(--primary-bg-color);
@@ -231,10 +232,12 @@ nav .auth-nav a {
   width: 270px;
   background: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    
 }
 .member-card img {
   max-width: 100%;
-
 }
 .member-card .title {
   margin-top: 30px;
@@ -251,7 +254,6 @@ nav .auth-nav a {
   line-height: 1.18;
   text-align: center;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
 }
 .soc-icons {
   margin-top: 16px;
@@ -261,7 +263,7 @@ nav .auth-nav a {
   display: flex;
   justify-content: space-between;
 }
-.icon-list  a {
+.icon-list a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,10 +279,7 @@ nav .auth-nav a {
   fill: var(--btn-bg-color);
 }
 
-.member-card:hover,
 .member-card:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /*_____________________partners */
@@ -299,9 +298,9 @@ nav .auth-nav a {
   width: 170px;
   height: 90px;
   border: 1px solid;
-  border-color: var(--primary-text-color);
+  border-color: #afb1b8;
   border-radius: 4px;
-  fill: var(--primary-text-color);
+  fill: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,8 +382,7 @@ address {
 }
 
 .subscribe .icon-list a:hover,
-.subscribe .icon-list a:focus
- {
+.subscribe .icon-list a:focus {
   background-color: var(--accent-text-color);
   fill: var(--btn-bg-color);
 }
@@ -406,8 +404,7 @@ address {
 }
 /*------------filter-btn  */
 .filter .button:hover,
-.filter .button:focus,
-.project-cards:focus {
+.filter .button:focus {
   background-color: var(--accent-text-color);
   color: var(--primary-bg-color);
 }
@@ -429,13 +426,17 @@ address {
   padding: 6px 22px;
 }
 /*-----------project-cards */
-
+.project-cards a:focus,
+.project-cards a:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-cards {
   flex-wrap: wrap;
-  margin-left: -30px; 
+  margin-left: -30px;
   margin-top: -30px;
 }
-.project-cards li{
+.project-cards li {
   /* flex-basis: calc(100% / 3 - 30px); */
   width: 370px;
   margin-left: 30px;
@@ -444,7 +445,7 @@ address {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.project-cards img{
+.project-cards img {
   max-width: 100%;
 }
 .text-container {
