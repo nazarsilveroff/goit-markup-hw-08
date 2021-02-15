@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Work-4</title>
+    <title>Home Work-5</title>
   </head>
   <body>
     <header class="header">
@@ -62,9 +62,22 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button " class="button hero-button primary">
+          <button
+            data-modal-open
+            type="button "
+            class="button hero-button primary"
+          >
             Заказать услугу
           </button>
+          <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+              <button data-modal-close class="modal-close">
+                <svg width="11" height="11">
+                  <use href="./images/icons-defs.svg#icon-close-btn"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -132,7 +145,11 @@
                   src="./images/work1.png"
                   alt="Чем мы занимаемся_1"
                   width="370"
-              /></a>
+                />
+                <div class="img-content">
+                  <h3 class="img-title">Десктопные приложения</h3>
+                </div>
+              </a>
             </li>
             <li>
               <a href=""
@@ -140,7 +157,9 @@
                   src="./images/work2.png"
                   alt="Чем мы занимаемся_2"
                   width="370"
-              /></a>
+              /><div class="img-content">
+                  <h3 class="img-title">Десктопные приложения</h3>
+                </div></a>
             </li>
             <li>
               <a href=""
@@ -148,7 +167,9 @@
                   src="./images/work3.png"
                   alt="Чем мы занимаемся_3"
                   width="370"
-              /></a>
+              /><div class="img-content">
+                  <h3 class="img-title">Десктопные приложения</h3>
+                </div></a>
             </li>
           </ul>
         </div>
@@ -160,9 +181,9 @@
           <ul class="member list">
             <li class="member-card">
               <img
-                  src="./images/member1.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
+                src="./images/member1.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
               />
               <h3 class="title">Игорь Демьяненко</h3>
               <p class="text" lang="en">Product Designer</p>
@@ -200,11 +221,9 @@
                   </li>
                 </ul>
               </div>
-            
             </li>
             <li class="member-card">
-              <img src="./images/member2.jpg" alt="Ольга Репина" width="270"
-              />
+              <img src="./images/member2.jpg" alt="Ольга Репина" width="270" />
               <h3 class="title">Ольга Репина</h3>
               <p class="text" lang="en">Frontend Developer</p>
               <div class="soc-icons">
@@ -244,9 +263,9 @@
             </li>
             <li class="member-card">
               <img
-                  src="./images/member3.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
+                src="./images/member3.jpg"
+                alt="Николай Тарасов"
+                width="270"
               />
               <h3 class="title">Николай Тарасов</h3>
               <p class="text" lang="en">Marketing</p>
@@ -287,9 +306,9 @@
             </li>
             <li class="member-card">
               <img
-                  src="./images/member4.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
+                src="./images/member4.jpg"
+                alt="Михаил Ермаков"
+                width="270"
               />
               <h3 class="title">Михаил Ермаков</h3>
               <p class="text" lang="en">UI Designer</p>
@@ -434,5 +453,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
