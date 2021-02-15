@@ -26,12 +26,11 @@ a {
   padding: 0 15px 0;
   margin: 0 auto;
 }
-img{
-  display:block;
+img {
+  display: block;
 }
 /* HEADER */
-.header-container {
-}
+
 .header-container,
 nav,
 .site-nav,
@@ -270,9 +269,8 @@ nav .auth-nav a {
   display: flex;
   justify-content: space-between;
 }
-.work a{
-position: relative;
-
+.work a {
+  position: relative;
 }
 
 .img-content {
