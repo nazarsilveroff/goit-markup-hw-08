@@ -26,6 +26,9 @@ a {
   padding: 0 15px 0;
   margin: 0 auto;
 }
+img{
+  display:block;
+}
 /* HEADER */
 .header-container {
 }
@@ -267,10 +270,16 @@ nav .auth-nav a {
   display: flex;
   justify-content: space-between;
 }
+.work a{
+position: relative;
+
+}
+
 .img-content {
-  position: relative;
+  position: absolute;
   bottom: 77px;
-  z-index: 1;
+  width: 100%;
+  bottom: 0;
   color: var(--primary-bg-color);
   padding: 27px;
   background: rgba(47, 48, 58, 0.8);
