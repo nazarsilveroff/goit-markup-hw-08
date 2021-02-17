@@ -291,6 +291,8 @@ nav .auth-nav a {
   background-color: var(--accent-text-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 /* HERO */
 
 .section-hero {
