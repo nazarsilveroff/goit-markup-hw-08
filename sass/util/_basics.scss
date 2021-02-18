@@ -1,0 +1,32 @@
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px 0;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.43;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.header.portfolio {
+  border-bottom: 1px solid #ececec;
+}
