@@ -76,6 +76,10 @@ img {
   letter-spacing: 0.06em;
 }
 
+.link.current {
+  color: var(--accent-text-color);
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,6 +448,12 @@ img {
 }
 
 .modal-close:hover {
+  fill: var(--accent-text-color);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:focus {
   fill: var(--accent-text-color);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1384,6 +1394,7 @@ address {
 
 .menu-mobile {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -1421,6 +1432,12 @@ address {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+.mobil__site-nav .link:focus {
+  color: var(--accent-text-color);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobil__auth-nav {

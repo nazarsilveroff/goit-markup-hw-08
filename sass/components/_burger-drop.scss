@@ -1,5 +1,6 @@
 .menu-mobile {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,7 +17,7 @@
   display: none;
 }
 .mobil__site-nav {
-    margin-bottom: 302px;
+  margin-bottom: 302px;
   li {
     &:not(:last-child) {
       margin-bottom: 35.71px;
@@ -28,10 +29,14 @@
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    &:focus {
+      color: var(--accent-text-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
 .mobil__auth-nav {
-    margin-bottom: 64px;
+  margin-bottom: 64px;
   li {
     &:not(:last-child) {
       margin-bottom: 32px;
@@ -68,7 +73,6 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-   
   }
   li {
     &:not(:last-child) {
