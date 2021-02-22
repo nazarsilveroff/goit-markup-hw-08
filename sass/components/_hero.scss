@@ -1,5 +1,9 @@
 .section-hero {
-  background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/img-bcg.png);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,31 +12,84 @@
 .hero-title {
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
-  display: block;
-  margin: 0 auto 40px;
+  margin: 0 auto 35px;
+
+  @media screen and(min-width: 1024px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
-.button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  border: transparent;
+.button.accent {
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.hero-button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 32px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-mobile@2x.jpg);
+    padding: 118px 20px;
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-tablet@2x.jpg);
+    padding: 118px 0;
+  }
+}
+// .hero-title {
+//   font-style: normal;
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: var(--primary-bg-color);
+//   display: block;
+//   margin: 0 auto 40px;
+// }
+// .section-hero {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/img-bcg.png);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     padding: 200px 0;
+//   }
+// .button {
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
+//   align-items: center;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   border-radius: 4px;
+//   border: transparent;
+//   &:hover {
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+// .hero-button {
+//   display: block;
+//   margin: 0 auto;
+//   padding: 10px 32px;
+// }
