@@ -5,7 +5,8 @@
       background-color: var(--accent-text-color);
       color: var(--primary-bg-color);
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     &:focus {
       background-color: var(--accent-text-color);
@@ -17,7 +18,7 @@
 .filter-btn {
   display: flex;
   flex-wrap: wrap;
-  @media(min-width:768px ){
+  @media (min-width: 768px) {
     justify-content: center;
   }
   margin-bottom: 56px;
@@ -26,19 +27,35 @@
     margin-bottom: 12px;
   }
 }
+.projects-container {
+}
 .project-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: -30px;
   margin-left: -30px;
-  margin-top: -30px;
+  li {
+    width: 450px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background: #ffffff;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 345px;
+    }
+    @media (min-width: 1024px) {
+      width: 370px;
+    }
+  }
   a {
     &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       .image-container {
         &::before {
@@ -50,19 +67,9 @@
       }
     }
   }
-  li {
-    max-width: 370px;
-    margin-left: 30px;
-    margin-top: 30px;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-    @media (min-width: 768px) and (max-width: 1024px) {
-      flex-basis: calc(100% / 3);
-    }
-  
-  }
+
   img {
-    max-width: 100%;
+    width: 100%;
   }
   .title {
     font-weight: 700;
@@ -130,3 +137,20 @@
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+
+// .project-cards {
+
+//   // margin-top: -30px;
+//   @media (max-width: 767px) {
+//     // margin-left: 0;
+//     // margin-left: -30px;
+//   }
+//   li {
+
+//     // margin-top: 30px;
+
+//     @media (min-width: 768px) and (max-width: 1024px) {
+//       flex-basis: calc(100% / 3);
+
+//     }
+//   }

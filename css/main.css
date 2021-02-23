@@ -1272,8 +1272,27 @@ address {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: -30px;
   margin-left: -30px;
-  margin-top: -30px;
+}
+
+.project-cards li {
+  width: 450px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  background: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project-cards li {
+    width: 345px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-cards li {
+    width: 370px;
+  }
 }
 
 .project-cards a:focus {
@@ -1300,23 +1319,8 @@ address {
           transform: translateY(0);
 }
 
-.project-cards li {
-  max-width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .project-cards li {
-    -ms-flex-preferred-size: calc(100% / 3);
-        flex-basis: calc(100% / 3);
-  }
-}
-
 .project-cards img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .project-cards .title {
