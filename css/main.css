@@ -1190,12 +1190,14 @@ address {
             flex-direction: row;
   }
   .footer-nav {
+    margin-bottom: 0;
     margin-right: 70px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
   .subscribe {
+    margin-bottom: 0;
     margin-right: 90px;
     -webkit-box-align: start;
         -ms-flex-align: start;
