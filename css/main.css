@@ -1396,20 +1396,12 @@ address {
 
 .menu-mobile {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: var(--primary-bg-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 48px 83px 48px 40px;
 }
 
 .menu-mobile .modal-close {
@@ -1420,8 +1412,23 @@ address {
   display: none;
 }
 
+.menu-style {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 0 48px 40px;
+  position: relative;
+}
+
 .mobil__site-nav {
-  margin-bottom: 302px;
+  position: absolute;
+  top: 6%;
 }
 
 .mobil__site-nav li:not(:last-child) {
@@ -1443,7 +1450,8 @@ address {
 }
 
 .mobil__auth-nav {
-  margin-bottom: 64px;
+  position: absolute;
+  bottom: 18%;
 }
 
 .mobil__auth-nav li:not(:last-child) {
@@ -1472,6 +1480,8 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: absolute;
+  bottom: 7%;
 }
 
 .social__menu .link {
