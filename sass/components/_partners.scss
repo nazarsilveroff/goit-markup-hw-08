@@ -10,6 +10,7 @@
   justify-content: center;
   margin-left: -30px;
   margin-bottom: -30px;
+
   li {
     max-width: 226px;
     flex-basis: calc(100% / 3);
@@ -37,7 +38,14 @@
     }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  .patners-list {
+    justify-content: center;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
   .patners-list {
     display: flex;
     flex-direction: row;
